@@ -1,0 +1,30 @@
+# Sanal ortam
+.venv/
+venv/
+env/
+
+# Python derleme/önbellek dosyaları
+__pycache__/
+*.py[cod]
+
+# Paketleme çıktıları
+build/
+dist/
+*.egg-info/
+
+# Test ve kapsam raporları
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Gizli bilgiler (API anahtarı, şifre vb.)
+.env
+*.env
+
+# IDE ve editör ayarları
+.idea/
+.vscode/
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
