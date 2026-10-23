@@ -1,10 +1,11 @@
 class Kitap:
 
-    def __init__(self, baslik, yazar, isbn):  #yapıcı metot constructure
+    def __init__(self, baslik, yazar, sayfa_sayisi, isbn):  # yapıcı metot (constructure)
         self.baslik = baslik
         self.yazar = yazar
         self.isbn = isbn
         self.odunc_verildi_mi = False
+        self.sayfa_sayisi = sayfa_sayisi
         #self: şu anda üzerinde çalışılan nesnenin kendisi
 
     def odunc_ver(self):
@@ -23,5 +24,5 @@ class Kitap:
 
     def __str__(self):
         durum = "Ödünçte" if self.odunc_verildi_mi else "Rafta"
-        return f"{self.baslik} - {self.yazar}  ({durum})"
+        return f"{self.baslik} - {self.yazar} - {self.sayfa_sayisi} sayfa ({durum})"
      
